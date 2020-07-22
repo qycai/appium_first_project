@@ -7,6 +7,8 @@ exports.config = {
     // WebdriverIO allows it to run your tests in arbitrary locations (e.g. locally or
     // on a remote machine).
     runner: 'local',
+    port: 4723,
+    path: "/wd/hub",
     //
     // ==================
     // Specify Test Files
@@ -45,20 +47,22 @@ exports.config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://docs.saucelabs.com/reference/platforms-configurator
     //
-    capabilities: [{
-
-        // maxInstances can get overwritten per capability. So if you have an in-house Selenium
-        // grid with only 5 firefox instances available you can make sure that not more than
-        // 5 instances get started at a time.
-        maxInstances: 5,
-        //
-        browserName: 'chrome',
-        acceptInsecureCerts: true
-        // If outputDir is provided WebdriverIO can capture driver session logs
-        // it is possible to configure which logTypes to include/exclude.
-        // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
-        // excludeDriverLogs: ['bugreport', 'server'],
-    }],
+    capabilities: [
+        {
+            platformName: 'iOS',
+            platformVersion: '13.6',
+            automationName: 'XCUITest',
+            deviceName: 'iPhone 11',
+            app: '/Users/qycai/exercises/appium/appium/sample-code/apps/TestApp.app',
+        },
+        {
+            platformName: 'Android',
+            // platformVersion: '8.1',
+            automationName: 'UIAutomator2',
+            deviceName: 'Pixel 2 API 27',
+            app: '/Users/qycai/exercises/appium/appium/sample-code/apps/ApiDemos-debug.apk'
+        }
+    ],
     //
     // ===================
     // Test Configurations
