@@ -54,13 +54,7 @@ exports.config = {
             automationName: 'XCUITest',
             deviceName: 'iPhone 11',
             app: '/Users/qycai/exercises/appium/appium/sample-code/apps/TestApp.app',
-        },
-        {
-            platformName: 'Android',
-            // platformVersion: '8.1',
-            automationName: 'UIAutomator2',
-            deviceName: 'Pixel 2 API 27',
-            app: '/Users/qycai/exercises/appium/appium/sample-code/apps/ApiDemos-debug.apk'
+            clearSystemFiles: true,
         }
     ],
     //

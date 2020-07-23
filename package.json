@@ -4,7 +4,8 @@
   "description": "This is my first project for appium test",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "testAll": "./node_modules/.bin/wdio config/wdio.ios.conf.js",
+    "testAppTest": "./node_modules/.bin/wdio config/wdio.ios.conf.js --mochaOpts.grep 'test TestApp'"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,6 @@
     "wdio-chromedriver-service": "^6.0.3"
   },
   "dependencies": {
-    "webdriverio": "^6.3.4"
+    "mocha": "^8.0.1"
   }
 }
