@@ -3,7 +3,7 @@ const mapScreen = require('../screeenobjects/map.screen')
 
 
 describe('test TestApp', () => {
-    it('should get correct answer from count sum function', function () {
+    it('should TestApp works correctly', function () {
         //check count sum
         homeScreen.countSum(1, 2);
         expect(homeScreen.answer).toHaveText("3");
