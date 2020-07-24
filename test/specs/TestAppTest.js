@@ -1,3 +1,5 @@
+import {describe} from "mocha";
+
 const homeScreen = require('../screeenobjects/home.screen')
 const mapScreen = require('../screeenobjects/map.screen')
 
