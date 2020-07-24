@@ -1,4 +1,4 @@
-class MapPage {
+class MapScreen {
     get map() {
         const selector = `type=='XCUIElementTypeMap'`;
         return $(`-ios predicate string:${selector}`)
@@ -11,4 +11,4 @@ class MapPage {
 
 }
 
-module.exports = new MapPage()
+module.exports = new MapScreen()

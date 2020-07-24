@@ -1,4 +1,4 @@
-class HomePage {
+class HomeScreen {
     get integerA() {
         return $('~IntegerA')
     }
@@ -82,4 +82,4 @@ class HomePage {
 }
 
 
-module.exports = new HomePage()
+module.exports = new HomeScreen()
