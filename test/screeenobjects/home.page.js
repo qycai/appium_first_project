@@ -48,6 +48,11 @@ class HomePage {
         return $('~not authorized')
     }
 
+    get testGestureButton() {
+        const selector = `type=='XCUIElementTypeButton' && name CONTAINS 'Test Gesture'`;
+        return $(`-ios predicate string:${selector}`)
+    }
+
     countSum(integerA, integerB) {
         this.integerA.setValue(integerA);
         this.integerB.setValue(integerB);
@@ -68,6 +73,10 @@ class HomePage {
 
     checkCalendar() {
         this.checkCalendarButton.click()
+    }
+
+    testGesture() {
+        this.testGestureButton.click()
     }
 
 }

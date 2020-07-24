@@ -1,4 +1,6 @@
 const homePage = require('../screeenobjects/home.page')
+const mapPage = require('../screeenobjects/map.page')
+
 
 describe('test TestApp', () => {
     it('should get correct answer from count sum function', function () {
@@ -23,5 +25,9 @@ describe('test TestApp', () => {
         expect(homePage.calendarMessage).toHaveText("not authorized")
         homePage.closeAlert();
 
+        //test gesture
+        homePage.testGesture()
+        driver.execute('mobile: doubleTap', {element: mapPage.map});
+        expect(mapPage.hongKongLabel).toHaveText('Hong Kong')
     });
 })
