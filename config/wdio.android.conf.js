@@ -53,6 +53,8 @@ exports.config = {
             automationName: 'UIAutomator2',
             deviceName: 'Pixel 2 API 26',
             app: '/Users/qycai/exercises/appium/appium/sample-code/apps/ApiDemos-debug.apk'
+            // browserName: 'Chrome',
+            // chromedriverExecutable: '/Users/qycai/exercises/appium/appium/sample-code/apps/chromedriver'
         }
     ],
     //

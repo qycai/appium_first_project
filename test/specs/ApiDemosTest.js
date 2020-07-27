@@ -5,5 +5,8 @@ describe('test ApiDemos', () => {
         homeScreen.setPreferenceFromXml()
         preferenceScreen.setCheckboxPreferenceButton()
         preferenceScreen.setFavoriteAnimal()
+        preferenceScreen.chooseOptionsByText("Alpha Option 01")
+        preferenceScreen.setScreenPreference()
+        preferenceScreen.setIntentPreference()
     });
 })
