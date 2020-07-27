@@ -1,5 +1,5 @@
-const homeScreen = require('../screeenobjects/home.screen')
-const mapScreen = require('../screeenobjects/map.screen')
+const homeScreen = require('../screeenobjects/testAppScreen/home.screen')
+const mapScreen = require('../screeenobjects/testAppScreen/map.screen')
 
 
 describe('test TestApp', () => {
