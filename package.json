@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "testAll": "./node_modules/.bin/wdio config/wdio.ios.conf.js",
-    "testAppTest": "./node_modules/.bin/wdio config/wdio.ios.conf.js --mochaOpts.grep 'test TestApp'"
+    "testAppTest": "./node_modules/.bin/wdio config/wdio.ios.conf.js --mochaOpts.grep 'test TestApp'",
+    "apiDemosTest": "./node_modules/.bin/wdio config/wdio.android.conf.js --mochaOpts.grep 'test ApiDemos'"
   },
   "repository": {
     "type": "git",
